@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(83, 98, 146);
+}
+
+#container{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background: white;
+    height:770px;
+    overflow-y : auto ;
+    border: 15px solid rgb(146, 250, 210);
+}
+
+#container h1{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#container ul{
+    margin-top: 50px;
+}
+
+#container ul li{
+    list-style: none;
+    border: 3px solid rgb(152, 178, 250);
+    width: 80%;
+    height: 40px;
+    margin: 10px auto; 
+    text-align: left;
+}
+
+#container ul li label{
+    height: 100%;
+    font-size: 20px;
+}
+
+#container ul li #check{
+    float:left;
+    width: 40px;
+    height: 35px;
+    border: 2px solid red;
+    position: relative;
+}
+
+#container ul li #check:checked:after{
+    font-size: 20px;
+    color: black;
+}
+
+/* doubts --> cutting text  */
+#container ul li input[type="checkbox"]:checked+label{
+
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 3);
+
+}
+
+#container .controls{
+    width: 60%;
+    margin:auto;
+}
+
+#container .controls #input{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 5px;
+    margin-bottom: 40px;
+    border: 2px solid rgb(185, 207, 255);
+    border-radius: 20px;
+}
+
+#container .controls button{
+    width:250px;
+    background: white;
+    height :50px;
+    margin-top: 15px;
+    cursor:pointer;
+    color: white;
+}
+
+#container .controls button:hover{
+    transform: scale(1.1);
+}
+
+#container .controls #add{
+    background-color: #2980b9 ;
+    border-radius: 30px;
+}
+
+#container .controls #remove{
+    background-color: rgb(218, 67, 67) ;
+    border-radius: 30px;
+}
+
+#container .mycheck{
+    opacity:1;
+    border-radius: 0px;
+}
+
+.visual{
+    opacity: 1 !important;
+    border-radius: 15px;
+}
+
